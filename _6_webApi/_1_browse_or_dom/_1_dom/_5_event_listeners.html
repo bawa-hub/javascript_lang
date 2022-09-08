@@ -1,0 +1,21 @@
+<!-- 
+    https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+    https://developer.mozilla.org/en-US/docs/Web/API/EventTarget 
+    https://developer.mozilla.org/en-US/docs/Web/Events
+-->
+
+<button id="myBtn">Try it</button>
+<p id="demo"></p>
+
+<script>
+    document.getElementById("myBtn").addEventListener("click", displayDate);
+
+    function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+</script>
+
+
+<!-- 
+    Note: Events and EventListener are most important topics, So learn them by heart
+ -->

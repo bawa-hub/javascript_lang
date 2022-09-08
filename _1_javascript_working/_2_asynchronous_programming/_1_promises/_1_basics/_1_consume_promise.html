@@ -1,0 +1,79 @@
+<!-- 
+
+    To schedule a callback when the promise is either resolved or rejected, 
+    you call the methods of the Promise object: then(), catch(), and finally()
+
+    then() method --
+    then() method is used to schedule a callback to be executed when the promise is successfully resolved.
+    The then() method takes two callback functions
+    promiseObject.then(onFulfilled, onRejected);
+
+    catch() method --
+    If you want to schedule a callback to be executed when the promise is rejected,
+    you can use the catch() method of the Promise object:
+    Internally, the catch() method invokes the then(undefined, onRejected) method.
+
+    finally() method --
+    Sometimes, you want to execute the same piece of code whether the promise is fulfilled or rejected. 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function createApp() {
+            console.log("App is creating");
+        }
+        function makePromise(completed) {
+            return new Promise(function (resolve, reject) {
+                setTimeout(() => {
+                    if (completed) {
+                        resolve("I have completed learning JS.");
+                    } else {
+                        reject("I haven't completed learning JS yet.");
+                    }
+                }, 3 * 1000);
+            });
+        }
+
+        let learnJS = makePromise(true);
+
+        // learnJS.then(
+        //     success => console.log(success),
+        //     reason => console.log(reason)
+        // );
+
+        learnJS.then(
+            value => console.log(value)
+        );
+
+        let masterJS = makePromise(false);
+
+        // masterJS.then(
+        //     undefined,
+        //     reason => console.log(reason)
+        // );
+
+        learnJS.catch(
+            reason => console.log(reason)
+        );
+
+        learnJS
+            .then(success => console.log(success))
+            .catch(reason => console.log(reason))
+            .finally(() => createApp());
+    </script>
+
+</body>
+
+</html>

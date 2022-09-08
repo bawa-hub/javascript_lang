@@ -1,0 +1,60 @@
+<!-- https://www.w3schools.com/js/js_htmldom_events.asp -->
+
+<!-- Reacting to Events -->
+<h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+<h1 onclick="changeText(this)">Click on another text!</h1>
+
+
+<!-- HTML Event Attributes -->
+<!-- To assign events to HTML elements you can use event attributes. -->
+<button id="myBtn" onclick="alert()">Try it</button>
+
+<script>
+    //    Assign Events Using the HTML DOM
+    document.getElementById("myBtn").onclick = displayDate;
+
+    const displayDate = () => {
+        console.log(Date.now())
+    }
+
+    function changeText(id) {
+        id.innerHTML = "Ooops!";
+    }
+</script>
+
+
+<!-- onload and onunload events are triggered when the user enters or leaves the page. -->
+<!-- onchange event is often used in combination with validation of input fields. -->
+<!-- onmouseover and onmouseout events can be used to trigger a function when the user mouses over, or out of, an HTML element: -->
+<!-- onmousedown, onmouseup, and onclick events are all parts of a mouse-click. 
+    First when a mouse-button is clicked, the onmousedown event is triggered, then, 
+    when the mouse-button is released, the onmouseup event is triggered, finally, 
+    when the mouse-click is completed, the onclick event is triggered. -->
+
+<!-- onmousedown and onmouseup
+Change an image when a user holds down the mouse button.
+
+onload
+Display an alert box when the page has finished loading.
+
+onfocus
+Change the background-color of an input field when it gets focus.
+
+Mouse Events
+Change the color of an element when the cursor moves over it. -->
+
+<!-- 
+for more events --
+https://www.w3schools.com/jsref/dom_obj_event.asp -->
+
+<!-- 
+    Event Listeners --
+    element.addEventListener(event, function, useCapture);
+
+
+
+
+
+
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+-->

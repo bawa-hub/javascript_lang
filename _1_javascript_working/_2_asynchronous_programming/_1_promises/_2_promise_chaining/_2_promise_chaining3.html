@@ -1,0 +1,42 @@
+<!-- This code pattern allows you to execute some tasks in sequence. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="numbers"></div>
+    <script>
+        var e = document.getElementById("numbers");
+        function generateNumber(num) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(num);
+                }, 3 * 1000);
+            });
+        }
+
+        generateNumber(10)
+            .then(result => {
+                console.log(result);
+                e.append(result)
+                return generateNumber(result * 2);
+            })
+            .then((result) => {
+                console.log(result);
+                e.append(result)
+                return generateNumber(result * 3);
+            })
+            .then(result => {
+                console.log(result)
+                e.append(result)
+            });
+    </script>
+</body>
+
+</html>

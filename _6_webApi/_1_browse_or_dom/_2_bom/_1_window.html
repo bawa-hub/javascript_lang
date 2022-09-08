@@ -1,0 +1,58 @@
+<!-- 
+
+Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
+All global JavaScript objects, functions, and variables automatically become members of the window object
+
+window size -- 
+    window.innerHeight - the inner height of the browser window (in pixels)
+    window.innerWidth - the inner width of the browser window (in pixels)
+    
+window methods --
+    window.open() - open a new window
+    window.close() - close the current window
+    window.moveTo() - move the current window
+    window.resizeTo() - resize the current window
+
+Note: The browser window (the browser viewport) is NOT including toolbars and scrollbars
+
+window.screen object contains information about the user's screen.   
+    screen.width
+    screen.height
+    screen.availWidth
+    screen.availHeight
+    screen.colorDepth
+    screen.pixelDepth
+
+window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+    window.location.href returns the href (URL) of the current page
+    window.location.hostname returns the domain name of the web host
+    window.location.pathname returns the path and filename of the current page
+    window.location.protocol returns the web protocol used (http: or https:)
+    window.location.assign() loads a new document
+
+window.history object contains the browsers history.
+    history.back() - same as clicking back in the browser
+    history.forward() - same as clicking forward in the browser
+
+window.navigator object contains information about the visitor's browser    
+    navigator.appName returns the application name of the browser:
+    navigator.appCodeName returns the application code name of the browser:
+    navigator.platform returns the browser platform (operating system):
+    navigator.cookieEnabled returns true if cookies are enabled, otherwise false:
+    navigator.product returns the product name of the browser engine:
+    navigator.appVersion returns version information about the browser:
+    navigator.userAgent returns the user-agent header sent by the browser to the server:
+    navigator.language returns the browser's language:
+    navigator.onLine returns true if the browser is online:
+    navigator.javaEnabled() returns true if Java is enabled
+
+Popup Boxes --
+window.alert("sometext") -- click "OK" to proceed
+window.confirm("sometext") -- clicks "OK", returns true.clicks "Cancel", returns false.
+window.prompt("sometext","defaultText") -- clicks "OK" returns input value. If clicks "Cancel" returns null.
+To display line breaks inside a popup box, use a back-slash followed by the character n.
+alert("Hello\nHow are you?");
+
+
+
+ -->

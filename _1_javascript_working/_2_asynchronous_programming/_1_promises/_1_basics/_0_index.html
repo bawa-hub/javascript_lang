@@ -1,0 +1,47 @@
+<!-- // a promise is an object that returns a value which you hope to receive in the future, but not now.
+// A promise has three states:
+
+// Pending: you don’t know if you will complete learning JavaScript by the next month.
+// Fulfilled: you complete learning JavaScript by the next month.
+// Rejected: you don’t learn JavaScript at all.
+
+// A promise starts in the pending state which indicates that the promise hasn’t completed.
+// It ends with either fulfilled (successful) or rejected (failed) state
+
+// The Promise constructor accepts a function as an argument. This function is called the executor.
+// The executor accepts two functions with the names, by convention, resolve() and reject().
+// When you call the new Promise(executor), the executor is called automatically.
+// Inside the executor, you manually call the resolve() function if the executor is completed successfully,
+// and invoke the reject() function in case of an error occurs. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let completed = true;
+        // let completed = false;
+
+        let learnJS = new Promise(function (resolve, reject) {
+            setTimeout(() => {
+                if (completed) {
+                    resolve("I have completed learning JS.");
+                } else {
+                    reject("I haven't completed learning JS yet.");
+                }
+            }, 3 * 1000);
+        });
+
+        console.log(learnJS);
+    </script>
+</body>
+
+</html>
