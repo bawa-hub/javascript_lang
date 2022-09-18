@@ -5,6 +5,7 @@ https://www.javascripttutorial.net/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://www.youtube.com/playlist?list=PLwgFb6VsUj_n15Cg_y2ULKfsOR1XiQqPx
 https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
+official docs - https://tc39.es/ecma262/#sec-intro
 
 # Topic wise concepts --
 
