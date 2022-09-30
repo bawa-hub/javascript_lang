@@ -30,8 +30,3 @@
 # Part 6:
 
 -- explore and practice
-
-# usefulLinks:
-
--- official docs - https://tc39.es/ecma262/#sec-intro
--- tutorial - https://www.javascripttutorial.net/
