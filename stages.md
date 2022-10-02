@@ -26,7 +26,3 @@
 -- generators and iterators
 -- modules
 -- meta programming
-
-# Part 6:
-
--- explore and practice
