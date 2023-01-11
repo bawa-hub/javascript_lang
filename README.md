@@ -5,7 +5,6 @@
 [Express JS](#table-of-contents---express-js)<br/>
 [MongoDB and Mongoose](#table-of-contents---mongodb-and-mongoose)<br/>
 [Database Engineering](#table-of-contents---database-engineering)<br/>
-[Golang](#table-of-contents---golang)<br/>
 
 
 ### Table of Contents - Node JS
