@@ -81,7 +81,7 @@
 
 4. ### Why is NodeJS Single threaded?
 
-   Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved as opposed to the typical thread-based implementation. [more] (https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/)
+   Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved as opposed to the typical thread-based implementation. [more](https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/)
 
 **[ Back to Top ⬆ ](#table-of-contents---node-js)**
 
