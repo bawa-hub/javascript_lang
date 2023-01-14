@@ -2,6 +2,7 @@
 
 https://roadmap.sh/javascript
 https://www.w3schools.com/js/default.asp
+https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP
 https://www.javascripttutorial.net/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://javascript.info/
