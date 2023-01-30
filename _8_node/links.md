@@ -13,8 +13,14 @@ https://github.com/danbev/learning-nodejs
 # Useful links --
 
 https://github.com/sindresorhus/awesome-nodejs
+https://github.com/goldbergyoni/nodebestpractices
 https://javascript.plainenglish.io/73-awesome-npm-packages-for-productivity-c8340b373e57
 
 # projects --
 
+https://github.com/sqreen/awesome-nodejs-projects
 https://itsourcecode.com/topics/nodejs-projects/page/2/
+
+# npm --
+
+https://npmaddict.com/
