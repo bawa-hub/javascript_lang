@@ -7,6 +7,7 @@ https://nodejs.org/en/docs/
 https://www.javatpoint.com/nodejs-tutorial
 https://2ality.com/2022/09/nodejs-overview.html
 https://exploringjs.com/nodejs-shell-scripting/index.html
+https://www.javatpoint.com/nodejs-tutorial
 
 https://github.com/danbev/learning-nodejs
 
