@@ -1,4 +1,4 @@
-// functions in JavaScript are first-class objects,
+// functions in JavaScript are first-class citizens,
 // which means you can store functions in variables,
 // pass them to other functions as arguments,
 // and return them from other functions as values.
@@ -17,20 +17,17 @@ console.log(result);
 
 // Passing a function to another function
 // Because functions are values, you can pass a function as an argument into another function
-function add(a, b) {
-  return a + b;
-}
-let sum = add;
 function average(a, b, fn) {
   return fn(a, b) / 2;
 }
-let result = average(10, 20, sum);
+result = average(10, 20, sum);
 console.log(result);
 
 // Returning functions from functions
 // Since functions are values, you can return a function from another function.
 function compareBy(propName) {
   return function (a, b) {
+    // a, b are objects
     let x = a[propName],
       y = b[propName];
 
@@ -55,3 +52,24 @@ console.table(products);
 console.log("Products sorted by price:");
 products.sort(compareBy("price"));
 console.table(products);
+
+/***
+ *
+ * Note that a[propertyName] returns the value of the propertyName of the a object. It’s equivalent to a.propertyName. However, if the propertyName contains a space like 'Discount Price',
+ * you need to use the square bracket notation to access it.
+ */
+
+//  More JavaScript Functions are First-Class Citizens example
+function cmToIn(length) {
+  return length / 2.54;
+}
+function inToCm(length) {
+  return length * 2.54;
+}
+function convert(fn, length) {
+  return fn(length);
+}
+let inches = convert(cmToIn, 10);
+console.log(inches);
+let cm = convert(inToCm, 10);
+console.log(cm);

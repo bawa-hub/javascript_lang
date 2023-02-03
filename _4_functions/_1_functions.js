@@ -21,3 +21,5 @@ showMe(); // a hoisting example
 function showMe() {
   console.log("an hoisting example");
 }
+
+// Every function in JavaScript implicitly returns undefined unless you explicitly specify a return value
