@@ -5,10 +5,14 @@ https://www.w3schools.com/js/default.asp
 https://www.javascripttutorial.net/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://javascript.info/
-https://www.youtube.com/playlist?list=PLwgFb6VsUj_n15Cg_y2ULKfsOR1XiQqPx
 https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md
 https://exploringjs.com/tackling-ts/index.html
 official docs - https://tc39.es/ecma262/#sec-intro
+
+# youtube tutorials --
+
+https://www.youtube.com/playlist?list=PLwgFb6VsUj_n15Cg_y2ULKfsOR1XiQqPx
+https://www.youtube.com/@akshaymarch7/playlists
 
 # Topic wise concepts --
 
