@@ -27,7 +27,10 @@ console.log(typeof undeclaredVar); // undefined
 let obj = null;
 console.log(typeof obj); // object
 console.log(null == undefined); // true
+// The typeof null returns object is a known bug in JavaScript.
+// A proposal to fix this was proposed but rejected. The reason was the that fix would break a lot of existing sites.
 
+// JavaScript uses the number type to represent both integer and floating-point numbers.
 // range of the number type, you use Number.MIN_VALUE and Number.MAX_VALUE
 console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
 console.log(Number.MIN_VALUE); // 5e-324
@@ -57,6 +60,9 @@ str = str + " String";
 console.log(str);
 // JavaScript engine creates a new string that holds the new string 'JavaScript String'
 // and destroys the original strings 'JavaScript' and ' String'.
+
+// single quote or double quotes in a literal string
+let message = "I'm also a valid string"; // use \ to escape the single quote (')
 
 let completed = false;
 console.log(typeof completed); // boolean

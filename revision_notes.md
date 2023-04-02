@@ -1,8 +1,8 @@
-# Fundamental Data Types
+# Fundamentals, Operators and Control flow statements [ongoing]
 
-# Operators
+# Javascript Runtime [ongoing]
 
-# Control Flow Statements
+# Asynchronous programming
 
 # Functions
 
@@ -10,9 +10,7 @@
 
 # Classes
 
-# Asynchronous programming
-
-# Iterators and Generators
+# Iterators and Generators [done]
 
 # Modules
 
@@ -22,10 +20,4 @@
 
 # Error Handling
 
-# let, var and const [ongoing]
-
 # Proxy and Reflections
-
-# Javascript Runtime
-
-# Primitive wrapper types
