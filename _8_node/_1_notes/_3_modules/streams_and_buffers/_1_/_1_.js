@@ -4,7 +4,7 @@
  *
  * Work with data in chunks instead of waiting for the entire data to be avaialable at once
  * If you're transferring file contents from fileA to fileB, you don't wait for entire filteA conent to be saved in temporary memory before moving it into fileB.
- * Instead, the content if trasfrred in chunks over time which preventts unnecessary memory usage.
+ * Instead, the content if trasferred in chunks over time which prevents unnecessary memory usage.
  * Stream is infact a built-in node module that inherits from the event emitter class
  * Other module internally use streams for their functioning
  *

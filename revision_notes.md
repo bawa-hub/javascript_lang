@@ -4,9 +4,9 @@
 
 # Asynchronous programming
 
-# Functions
+# Functions [ongoing]
 
-# Objects and Prototypes
+# Objects and Prototypes [ongoing]
 
 # Classes
 
