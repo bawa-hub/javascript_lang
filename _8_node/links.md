@@ -12,6 +12,7 @@ https://github.com/danbev/learning-nodejs
 
 # youtube tutorials --
 
+https://www.youtube.com/playlist?list=PLCiGw8i6Nhvo08rQd9J7e19ToKMCJVKaM
 https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY
 https://www.youtube.com/playlist?list=PLwGdqUZWnOp00IbeN0OtL9dmnasipZ9x8
 
