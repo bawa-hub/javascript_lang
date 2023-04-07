@@ -1,8 +1,21 @@
+// Iterable {
+//     [Symbol.iterator]() : Iterator
+// }
+
+// Iterator {
+//     next()  : IteratorResultObject
+// }
+
+// IteratorResultObject{
+//     value: any,
+//     done: bool
+// }
+
+
 // Iteration protocols
 // There are two iteration protocols: iterable protocol and iterator protocol.
 
 // Iterator protocol
-
 // An object is an iterator when it implements an interface (or API) that answers two questions
 // Is there any element left?
 // If there is, what is the element?
@@ -24,7 +37,6 @@
 
 
 // Iterators
-
 // Since ES6 provides built-in iterators for the collection types  Array, Set, and Map, you don’t have to create iterators for these objects.
 // If you have a custom type and want to make it iterable so that you can use the for...of loop construct, you need to implement the iteration protocols.
 
@@ -72,9 +84,33 @@ while( !result.done ) {
     result = iterator.next();
 }
 
+// plain js objects are not iterable, so for..of loop will not applicable
+let person = {
+    firstname: 'Bawa',
+    lastname :'Vikram'
+}
+
+person[Symbol.iterator]= function() {
+    let properties = Object.keys(person);
+    let count = 0;
+    let isDone = false;
+    let next = () => {
+        if(count>=properties.length) {
+            isDone = true;
+        }
+        return {done: isDone,value: this[properties[count++]]}
+    }
+    return {next};
+}
+
+for(let p of person) {
+    console.log(p);
+}
+
 // Cleaning up
 // In addition to the next() method, the [Symbol.iterator]() may optionally return a method called return().
-// The return() method is invoked automatically when the iteration is stopped prematurely. It is where you can place the code to clean up the resources
+// The return() method is invoked automatically when the iteration is stopped prematurely. 
+// It is where you can place the code to clean up the resources
 
 class Sequence {
     constructor( start = 0, end = Infinity, interval = 1 ) {
