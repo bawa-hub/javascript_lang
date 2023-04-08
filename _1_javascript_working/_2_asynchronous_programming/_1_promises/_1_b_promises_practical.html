@@ -1,0 +1,36 @@
+<script>
+    // how to load a JSON file from the server and display its contents on a webpage.
+
+    function load(url) {
+        return new Promise(function (resolve, reject) {
+            const request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status == 200) {
+                    resolve(this.response);
+                } else {
+                    reject(this.status);
+                }
+            };
+            request.open('GET', url, true);
+            request.send();
+        });
+    }
+
+    const url = 'https://www.javascripttutorial.net/sample/promise/api.json';
+
+    function fetchData() {
+        load(url)
+            .then((response) => {
+                const result = JSON.parse(response);
+                console.log("result ", result);
+            })
+            .catch((error) => {
+                console.log("error ", error);
+            })
+            .finally(() =>
+                console.log("From finally block"))
+    }
+
+    fetchData()
+
+</script>

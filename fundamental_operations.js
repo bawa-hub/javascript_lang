@@ -8,29 +8,29 @@
 
 /********************************* Array of products ************************************************/
 
-// const products = [
-//   {
-//     id: 1,
-//     name: "Polo Jeans",
-//     price: 499,
-//     color: "black",
-//     category: "clothing",
-//   },
-//   {
-//     id: 2,
-//     name: "Kurta jeans",
-//     price: 299,
-//     color: "blue",
-//     category: "clothing",
-//   },
-//   {
-//     id: 3,
-//     name: "Iphone",
-//     price: 49999,
-//     color: "black",
-//     category: "electronics",
-//   },
-// ];
+const products = [
+  {
+    id: 1,
+    name: "Polo Jeans",
+    price: 499,
+    color: "black",
+    category: "clothing",
+  },
+  {
+    id: 2,
+    name: "Kurta jeans",
+    price: 299,
+    color: "blue",
+    category: "clothing",
+  },
+  {
+    id: 3,
+    name: "Iphone",
+    price: 49999,
+    color: "black",
+    category: "electronics",
+  },
+];
 
 /********************************* Add product ************************************************/
 
@@ -132,6 +132,8 @@
 /********************************* Search product ************************************************/
 
 // search product with id 1
+
+// Method 1 - using for
 // var searchProductById = function (arr, id) {
 //   for (const product of products) {
 //     if (product.id == 1) {
@@ -142,6 +144,13 @@
 // };
 // const searchedProduct = searchProductById(products, 1);
 // searchedProduct && console.log(searchedProduct);
+
+// Method 2 - using find
+// function findProductById(products, id) {
+//   const searchedProduct = products.find((product) => product.id == id);
+//   return searchedProduct;
+// }
+// console.log(findProductById(products, 1));
 
 // search products having name include 'jeans'
 // const searchedProducts = products.filter((product) =>
