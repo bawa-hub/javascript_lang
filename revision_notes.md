@@ -1,6 +1,6 @@
-# Fundamentals, Operators and Control flow statements [ongoing]
+# Fundamentals, Operators and Control flow statements
 
-# Javascript Runtime [ongoing]
+# Javascript Runtime
 
 # Asynchronous programming
 
@@ -8,11 +8,11 @@
 
 # Objects and Prototypes [ongoing]
 
-# Classes
+# Classes [ongoing]
 
 # Iterators and Generators [done]
 
-# Modules [pending]
+# Modules []
 
 # Symbols
 
