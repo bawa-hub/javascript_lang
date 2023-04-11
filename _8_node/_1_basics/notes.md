@@ -12,6 +12,9 @@
 
 3. How nodejs works? How Node.js works behind the scene?
    https://www.youtube.com/watch?v=jOupHNvDIq8
+   https://www.geeksforgeeks.org/explain-the-working-of-node-js/
+   https://www.geeksforgeeks.org/how-node-js-works-behind-the-scene/
+   https://chaudharypulkit93.medium.com/how-does-nodejs-work-beginner-to-advanced-event-loop-v8-engine-libuv-threadpool-bbe9b41b5bdd
 
 4. Why nodejs is faster ? And what is difference between single-threaded and multi-threaded?
 
@@ -20,6 +23,7 @@
 
 6. why nodejs is a single threaded language ?
    https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/
+   https://www.dotnettricks.com/learn/nodejs/exploring-nodejs-code-execution-process
 
 7. How single threaded handles concurrency when multiple I/O operations happening in Node.js ?
    https://www.geeksforgeeks.org/how-the-single-threaded-non-blocking-io-model-works-in-nodejs/?ref=rp
