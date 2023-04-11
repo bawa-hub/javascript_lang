@@ -1,6 +1,10 @@
 const crypto = require("crypto");
 
-const MAX_CALLS = 5;
+const MAX_CALLS = 1;
+// const MAX_CALLS = 2;
+// const MAX_CALLS = 3;
+// const MAX_CALLS = 4;
+// const MAX_CALLS = 5;
 
 const start = Date.now();
 
@@ -16,4 +20,5 @@ for (let i = 0; i < MAX_CALLS; i++) {
  * main thread is concerned, it appears as if the method is running asynchronously.
  *
  * Libuv's thread pool has 4 threads.
+ * The processing time will increase twice in above code after 4 calls as it runs synchronously on libuv therad pool threads.
  */

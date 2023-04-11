@@ -15,13 +15,16 @@ for (let i = 0; i < MAX_CALLS; i++) {
 }
 
 /**
- * Although both crypto.pbkdf2 and https.request are asynchronous, https.reqest method does not seem to use the thread pool.
+ * Although both crypto.pbkdf2 and https.request are asynchronous,
+ * https.reqest method does not seem to use the thread pool.
  * https.request does not seem to be affected by the no of CPU cores either.
  *
  * Netwok I/O:
  * https.request is a network input/output operation and not a CPU bound operation.
  * It does not use the thread pool.
- * Libuv instead delegates the work to the OS kernel and whenever possible, it will poll the kernel and see if the request has completed.
+ * Libuv instead delegates the work to the OS kernel and whenever possible,
+ * it will poll the kernel and see if the request has completed.
+ *
  *
  *
  */
