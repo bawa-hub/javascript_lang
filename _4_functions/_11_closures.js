@@ -50,7 +50,7 @@ hi(); // still can access the message variable
 
 // A closure is a function that preserves the outer scope in its inner scope.
 
-// more ractical example
+// more practical example
 function greeting2(message) {
   return function (name) {
     return message + " " + name;

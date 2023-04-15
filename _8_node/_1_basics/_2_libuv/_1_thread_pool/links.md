@@ -5,3 +5,5 @@
 # https://medium.com/softup-technologies/node-js-internals-not-everything-happens-on-the-thread-pool-a14d0a286efb
 
 # https://blog.devgenius.io/nodejs-and-libuvs-thread-pool-69b2cc225738
+
+# https://www.youtube.com/watch?v=TMRK5hjAlFE

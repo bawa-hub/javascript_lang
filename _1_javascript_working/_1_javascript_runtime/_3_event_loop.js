@@ -9,3 +9,4 @@
 
 // https://www.javascripttutorial.net/javascript-event-loop/ for more
 // https://www.youtube.com/watch?v=8zKuNo4ay8E&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=19
+// https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=816s

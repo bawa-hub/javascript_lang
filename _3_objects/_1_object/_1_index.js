@@ -55,7 +55,6 @@ let animal = {
 };
 
 // Accessing properties
-
 // The dot notation (.)
 console.log(animal.firstName);
 // Array-like notation ( [])
