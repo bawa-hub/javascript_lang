@@ -1,23 +1,17 @@
-# Fundamentals, Operators and Control flow statements
+# 1. Javascript Runtime []
 
-# Javascript Runtime [ongoing]
+# 2. Fundamentals, Operators and Control flow statements
 
-# Asynchronous programming [DONE]
+# 3. Functions []
 
-# Functions []
+# 4. Objects, Prototypes and Classes []
 
-# Objects and Prototypes []
+# 5. Asynchronous programming []
 
-# Classes []
+# 6. Iterators and Generators []
 
-# Iterators and Generators [DONE]
+# 7. Modules []
 
-# Modules []
+# 8. Error Handling []
 
-# Symbols
-
-# Collections
-
-# Error Handling [DONE]
-
-# Proxy and Reflections
+# 9. Proxy and Reflections
