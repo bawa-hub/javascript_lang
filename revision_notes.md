@@ -10,8 +10,8 @@
 
 # 6. Iterators and Generators []
 
-# 7. Modules []
+# 7. Error Handling []
 
-# 8. Error Handling []
+# 8. Modules []
 
 # 9. Proxy and Reflections
