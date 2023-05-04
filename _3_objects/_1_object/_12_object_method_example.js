@@ -7,7 +7,8 @@ const person = {
 const profile = Object.values(person);
 console.log(profile);
 
-// Object.entries() -- method that accepts an object and returns own enumerable string-keyed property [key, value] pairs of the object.
+// Object.entries() --
+// method that accepts an object and returns own enumerable string-keyed property [key, value] pairs of the object.
 const ssn = Symbol("ssn");
 const person1 = {
   firstName: "John",

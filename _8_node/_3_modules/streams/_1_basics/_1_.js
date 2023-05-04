@@ -15,7 +15,7 @@
  * Types of Streams:
  *
  * Readable streams from which data can be read
- * eg: Reading rom a file as readable stream
+ * eg: Reading from a file as readable stream
  *
  * Writable streams to which we can write data
  * eg: Writing to a file as writable stream
