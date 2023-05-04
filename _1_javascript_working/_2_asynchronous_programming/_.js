@@ -24,8 +24,11 @@
  * We need new pieces which are outside of javascript to help us write asynchronous code
  * For front-end, this is web browser come into play.For back-end, this is where nodejs comes into play
  *
- * Web browsers and nodejs define functions and APIs that allow us to register functions that should not be executed synchronously, and should instead be invoked asynchronously when some kind of event occurs.
- * eg: that could be the pessage of time (setTimeout or setInterval), the user's interaction with the mouse (addEventListener), data being read from a file system or the arrival of data over the network (callbacks, promises, async-await)
+ * Web browsers and nodejs define functions and APIs that allow us to register functions that should not be executed synchronously,
+ * and should instead be invoked asynchronously when some kind of event occurs.
+ * eg: that could be the pessage of time (setTimeout or setInterval),
+ * the user's interaction with the mouse (addEventListener),
+ * data being read from a file system or the arrival of data over the network (callbacks, promises, async-await)
  */
 
 //  https://www.youtube.com/watch?v=exBgWAIeIeg
