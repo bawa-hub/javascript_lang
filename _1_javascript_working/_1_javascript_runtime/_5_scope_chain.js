@@ -1,1 +1,1 @@
-// https://www.javascripttutorial.net/javascript-variable-scope/ for more
+// https://www.javascripttutorial.net/javascript-variable-scope/

@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=qikxEIxsXco
+
 // closure is a function that references variables in the outer scope from its inner scope.
 // The closure preserves the outer scope inside its inner scope
 // To understand the closures, you need to know how the lexical scoping works first
