@@ -1,3 +1,15 @@
+// In JavaScript, objects can inherit features from one another via prototypes.
+// Every object has its own property called prototype
+
+// Because a prototype itself is also another object, the prototype has its own prototype
+// This creates a something called prototype chain
+// The prototype chain ends when a prototype has null for its own prototype.
+
+// When you access a property of an object, if the object has that property, it’ll return the property value
+// if you access a property that doesn’t exist in an object, the JavaScript engine will search in the prototype of the object.
+// If the JavaScript engine cannot find the property in the object’s prototype,
+// it’ll search in the prototype’s prototype until either it finds the property or reaches the end of the prototype chain
+
 // By default, the JavaScript provides the Object() function:
 console.log(Object);
 // [Function: Object]
@@ -6,6 +18,7 @@ console.log(typeof Object); // 'function'
 
 // It also provides an anonymous object that can be referenced via the prototype property of the Object function
 console.log(Object.prototype);
+console.log(typeof Object.prototype); // 'object'
 
 // Object.prototype object has many methods and properties such as toString() and valueOf().
 // Note when a function is a value of a property of an object, it’s called a method.
@@ -25,9 +38,9 @@ function Person(name) {
 console.log(Person);
 console.log(Person.prototype);
 console.log(Person.prototype.constructor);
-// avaScript links the Person.prototype object to the Object.prototype object via the [[Prototype]],
+// JavaScript links the Person.prototype object to the Object.prototype object via the [[Prototype]],
 // which is known as a prototype linkage.
-// see _4_3_JS-prototype-Person-prototype.svg image or https://www.javascripttutorial.net/wp-content/uploads/2022/01/JS-prototype-Person-prototype.svg
+// see  https://www.javascripttutorial.net/wp-content/uploads/2022/01/JS-prototype-Person-prototype.svg
 
 // Defining methods in the javascript prototype object
 Person.prototype.greet = function () {
