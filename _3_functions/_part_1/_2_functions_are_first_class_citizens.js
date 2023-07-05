@@ -4,8 +4,6 @@
 // and return them from other functions as values.
 
 // Storing functions in variables
-// Functions are the first-class citizens in JavaScript.
-// In other words, you can treat functions like values of other types
 function add(a, b) {
   return a + b;
 }
@@ -55,7 +53,9 @@ console.table(products);
 
 /***
  *
- * Note that a[propertyName] returns the value of the propertyName of the a object. It’s equivalent to a.propertyName. However, if the propertyName contains a space like 'Discount Price',
+ * Note that a[propertyName] returns the value of the propertyName of the a object.
+ * It’s equivalent to a.propertyName.
+ * However, if the propertyName contains a space like 'Discount Price',
  * you need to use the square bracket notation to access it.
  */
 
