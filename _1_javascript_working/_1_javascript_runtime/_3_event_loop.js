@@ -1,3 +1,5 @@
+// http://latentflip.com/loupe
+
 // JavaScript is a single-threaded programming language.
 // In other words, JavaScript can do only one thing at a single point in time.
 

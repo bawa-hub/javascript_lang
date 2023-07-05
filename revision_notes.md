@@ -2,7 +2,7 @@
 
 # 2. Fundamentals, Operators and Control flow statements
 
-# 3. Functions []
+# 3. Functions
 
 # 4. Objects, Prototypes and Classes []
 
