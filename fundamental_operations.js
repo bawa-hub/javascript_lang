@@ -30,6 +30,13 @@ const products = [
     color: "black",
     category: "electronics",
   },
+  {
+    id: 4,
+    name: "TV",
+    price: 49999,
+    color: "black",
+    category: "electronics",
+  },
 ];
 
 /********************************* Add product ************************************************/

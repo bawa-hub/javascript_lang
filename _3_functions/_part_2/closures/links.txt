@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=vKJpN5FAeF4
+// https://ww.youtube.com/watch?v=qikxEIxsXco
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+https://www.frontendmag.com/insights/advantages-of-closures-in-javascript/
