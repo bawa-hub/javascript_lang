@@ -12,3 +12,5 @@ function dump(message) {
 let dump1 = (message) => console.log(message);
 console.log(dump.hasOwnProperty("prototype")); // true
 console.log(dump1.hasOwnProperty("prototype")); // false
+
+// when not to use arrow functions
