@@ -13,6 +13,7 @@ official docs - https://tc39.es/ecma262/#sec-intro
 
 https://www.youtube.com/playlist?list=PLwgFb6VsUj_n15Cg_y2ULKfsOR1XiQqPx
 https://www.youtube.com/@akshaymarch7/playlists
+https://www.youtube.com/playlist?list=PL0vfts4VzfNixzfaQWwDUg3W5TRbE7CyI
 
 # Topic wise concepts --
 
