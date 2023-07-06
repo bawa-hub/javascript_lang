@@ -1,16 +1,3 @@
-// In JavaScript, a function is an instance of the Function type
-function add(x, y) {
-  return x + y;
-}
-
-console.log(add instanceof Function); // true
-
-// Function.prototype syntax
-// functionName.call(thisArg, arg1, arg2, ...);
-
-// By default, the this inside the function is set to the global object i.e., window in the web browsers and global in Node.js.
-// in the strict mode, the this inside the function is set to undefined instead of the global object.
-
 var greeting = "Hi";
 var messenger = {
   greeting: "Hello",

@@ -59,3 +59,17 @@ console.log(calculate(radius, circumeference));
 // When working with arrays, you can use the map(), reduce(), filter(), and sort() functions to manipulate and transform data in an array.
 // When working with objects, you can use the Object.entries() function to create a new array from an object.
 // When working with functions, you can use the compose() function to create complex functions from simpler ones.
+
+/*************************** Similarity with map function */
+
+// it is a polyfill
+Array.prototype.calculate = function (logic) {
+  const output = [];
+  for (let i = 0; i < this.length; i++) {
+    output.push(logic(this[i]));
+  }
+  return output;
+};
+
+console.log(radius.calculate(area));
+console.log(radius.map(area));
