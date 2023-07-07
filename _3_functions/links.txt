@@ -1,2 +1,15 @@
 function methods:
 https://www.freecodecamp.org/news/understand-call-apply-and-bind-in-javascript-with-examples/
+
+closures:
+https://www.youtube.com/watch?v=vKJpN5FAeF4
+https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZ_LyvzfrndUOkIvOF4y-_c
+https://www.youtube.com/watch?v=qikxEIxsXco
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+https://www.frontendmag.com/insights/advantages-of-closures-in-javascript/
+
+function composition:
+https://www.educative.io/answers/function-composition-in-javascript
+https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0#.i84zm53fb
+https://javascript.plainenglish.io/a-working-example-of-function-composition-in-javascript-5e8c704a13ca
+https://javascript.plainenglish.io/a-working-example-of-function-composition-in-javascript-5e8c704a13ca

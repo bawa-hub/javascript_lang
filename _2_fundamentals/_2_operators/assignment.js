@@ -138,7 +138,7 @@ a.speed ??= 25;
 console.log(a.speed);
 // expected output: 25
 
-// destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+// spread and rest operator
 let a, b, rest;
 [a, b] = [10, 20];
 console.log(a);
@@ -148,3 +148,5 @@ console.log(b);
 [a, b, ...rest] = [10, 20, 30, 40, 50];
 console.log(rest);
 // expected output: Array [30,40,50]
+
+// https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/

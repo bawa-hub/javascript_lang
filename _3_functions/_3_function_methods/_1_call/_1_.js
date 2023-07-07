@@ -1,59 +1,34 @@
-var greeting = "Hi";
-var messenger = {
-  greeting: "Hello",
-};
-function say(name) {
-  console.log(this.greeting + " " + name);
-}
-say.call(this, "John"); // "Hi John"
-say.call(messenger, "John"); // "Hello John"
+// In JavaScript all functions are object methods.
+// If a function is not a method of a JavaScript object, it is a function of the global object
 
-// Using the JavaScript call() method to chain constructors for an object
-function Box(height, width) {
-  this.height = height;
-  this.width = width;
-}
-function Widget(height, width, color) {
-  Box.call(this, height, width);
-  this.color = color;
-}
-let widget = new Widget("red", 100, 200);
-console.log(widget); // Widget { height: 'red', width: 100, color: 200 }
+// Method Reuse: With the call() method, you can write a method that can be used on different objects
 
-// Using the JavaScript call() method for function borrowing
-const car = {
-  name: "car",
-  start() {
-    console.log("Start the " + this.name);
-  },
-  speedUp() {
-    console.log("Speed up the " + this.name);
-  },
-  stop() {
-    console.log("Stop the " + this.name);
+// call() can be used to invoke (call) a method with an owner object as an argument (parameter).
+const person = {
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
   },
 };
-
-const aircraft = {
-  name: "aircraft",
-  fly() {
-    console.log("Fly");
-  },
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+};
+const person2 = {
+  firstName: "Mary",
+  lastName: "Doe",
 };
 
-car.start.call(aircraft);
-car.speedUp.call(aircraft);
-aircraft.fly();
-//   Start the aircraft
-//   Speed up the aircraft
-//   Fly
+console.log(person.fullName.call(person1)); // John Doe
+console.log(person.fullName.call(person2)); // Mary Doe
 
-// how the arguments object borrows the filter() method of the Array.prototype via the call() function
-function isOdd(number) {
-  return number % 2;
-}
-function getOddNumbers() {
-  return Array.prototype.filter.call(arguments, isOdd);
-}
-let results = getOddNumbers(10, 1, 3, 4, 8, 9);
-console.log(results);
+// call() Method with Arguments
+const person = {
+  fullName: function (city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  },
+};
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+};
+console.log(person.fullName.call(person1, "Oslo", "Norway")); // John Doe,Oslo,Norway

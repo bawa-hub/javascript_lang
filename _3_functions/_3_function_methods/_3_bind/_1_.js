@@ -1,10 +1,10 @@
-// bind() method returns a new function, when invoked, has its this sets to a specific value
+// bind() method returns a new function, when invoked, has its "this" sets to a specific value
 
 // syntax
 // fn.bind(thisArg[, arg1[, arg2[, ...]]])
 
 // the bind() method doesn’t immediately execute the function.
-// It just returns a new version of the function whose this sets to thisArg argument.
+// It just returns a new version of the function whose "this" sets to thisArg argument.
 
 // Using JavaScript bind() for function binding
 let person = {
