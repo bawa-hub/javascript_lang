@@ -3,6 +3,8 @@
 
 // The call stack works based on the LIFO principle i.e., last-in-first-out.
 
+// call stack maintains the order of execution of execution context
+
 // When you execute a script, the JavaScript engine creates a Global Execution Context and pushes it on top of the call stack.
 // Whenever a function is called, the JavaScript engine creates a Function Execution Context for the function, pushes it on top of the Call Stack, and starts executing the function
 // If a function calls another function, the JavaScript engine creates a new Function Execution Context for the function that is being called and pushes it on top of the call stack.

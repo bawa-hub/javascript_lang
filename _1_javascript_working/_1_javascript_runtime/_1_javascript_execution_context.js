@@ -1,3 +1,5 @@
+// Everything in javascript happens inside an execution context
+
 // When a JavaScript engine executes a script, it creates execution contexts.
 // Each execution context has two phases: the creation phase and the execution phase.
 
@@ -8,6 +10,10 @@
 //     Create a this object binding which points to the global object above.
 //     Setup a memory heap for storing variables and function references.
 //     Store the function declarations in the memory heap and variables within the global execution context with the initial values as undefined.
+
+// Execution context consists of two components:
+// Memory/variable_enrvironment where variable and functions are stored
+// Code/Thread_of_execution where code is executed
 
 // To keep track of all the execution contexts, including the Global Execution Context and Function Execution Contexts,
 // the JavaScript engine uses a data structure named call stack,

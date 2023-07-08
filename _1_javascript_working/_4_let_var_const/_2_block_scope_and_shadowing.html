@@ -1,0 +1,38 @@
+<script>
+    // block or compound statement
+    {
+        var a = 3;
+        let b = 1;
+        const c = 2;
+        console.log(a);
+    }
+    console.log(a);
+    console.log(b); //reference error
+    // here let and const are block scope, you can see it in chrome dev tool dubugger scope section
+    // var is global scope and will be accessible outside this block but let and const will not
+
+    // shadowing
+    var x = 100;
+    let y = 20;
+    {
+        var x = 10; // shadows the variable in global
+        let y = 2;
+        console.log(x, y); // 10 2
+    }
+    console.log(x, y); // 10 20
+    // since var is global scoped it reference to same variable so changed but not in case of let and const
+
+    // this also behaves the same way in function scope
+
+
+    // this will through syntax error 
+    let m = 10;
+    {
+        var m = 20;
+    }
+
+    // block scope also follows lexical scope 
+
+    // all the scopes rules also followed by arrow functions
+
+</script>

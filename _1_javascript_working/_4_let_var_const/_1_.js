@@ -1,7 +1,5 @@
-// https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP
 
 // let keyword is similar to the var keyword, except that these variables are blocked-scope
-
 let x = 10;
 if (x == 10) {
   let x = 20;
@@ -12,7 +10,6 @@ console.log(x); // 10: reference at the begining of the script
 // When you declare a global variable using the var keyword, you add that variable to the property list of the global object
 var a = 10;
 console.log(window.a); // 10
-
 // when you use the let keyword to declare a variable, that variable is not attached to the global object as a property
 let b = 20;
 console.log(window.b); // undefined
@@ -38,12 +35,10 @@ for (let i = 0; i < 5; i++) {
 // let keyword declares a new variable in each loop iteration
 
 // Redeclaration
-
 // var keyword allows you to redeclare a variable without any issue
 var counter = 0;
 var counter;
 console.log(counter); // 0
-
 // redeclaring a variable using the let keyword will result in an error:
 let counter = 0;
 let counter;
