@@ -1,2 +1,4 @@
-Interview questions:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+nterview questions:
 https://www.youtube.com/watch?v=HaJdoFp2OEc
