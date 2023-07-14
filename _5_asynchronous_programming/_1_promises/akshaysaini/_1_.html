@@ -1,0 +1,60 @@
+<body>
+  <div>
+    <button onclick="create('success')">Create Order successfully</button>
+    <button onclick="create('error')">Create Order with error</button>
+    <h3 id="msg"></h3>
+  </div>
+  <script>
+    const cart = ["iphone", "mobile", "ipad"];
+    var successOrError;
+
+    // consumer
+    function create(type) {
+      successOrError = type
+
+
+      const promise = createOrder(cart); // orderId
+      console.log("promise", promise);
+
+      promise.then(function (orderId) {
+        console.log("orderId", orderId);
+        document.getElementById('msg').textContent = "Order is created with order id: " + orderId
+        //   proceedToPayment(orderId);
+      })
+        .catch(function (err) {
+          console.log("error", err.message);
+          document.getElementById('msg').textContent = err.message
+        })
+    }
+
+    // producer
+    function createOrder(cart) {
+      const pr = new Promise(function (resolve, reject) {
+        // createOrder
+        // validateCart
+        // get orderId
+
+        if (!validateCart(cart)) {
+          const err = new Error("Cart is not valid");
+          reject(err);
+        }
+
+        // logic for createOrder [simulate api call async operation]
+        const orderId = "12345";
+        if (orderId) {
+          setTimeout(function () {
+            resolve(orderId);
+          }, 3000);
+        }
+      });
+
+      return pr;
+    }
+
+    function validateCart(cart) {
+      if (successOrError == 'success') return true;
+      else return false;
+    }
+
+  </script>
+</body>

@@ -1,0 +1,77 @@
+<body>
+  <div>
+    <button onclick="create('success')">Create Order successfully</button>
+    <button onclick="create('error')">Create Order with error</button>
+    <h3 id="msg"></h3>
+    <h3 id="payinfo"></h3>
+  </div>
+  <script>
+    const cart = ["iphone", "mobile", "ipad"];
+    var successOrError;
+
+    // consumer
+    function create(type) {
+      successOrError = type
+
+      // createOrder
+      // proceedToPayment
+      // showOrderSummary
+      // updateWallet
+
+      createOrder(cart)
+        .then(function (orderId) {
+          document.getElementById('msg').textContent = "Order is created with order id: " + orderId
+          return orderId
+        })
+        .then(function (orderId) {
+          return proceedToPayment(orderId);
+        })
+        .then(function (paymentInfo) {
+          document.getElementById('payinfo').textContent = paymentInfo
+        })
+        .catch(function (err) {
+          document.getElementById('msg').textContent = err.message
+        })
+        // it will run after showing error
+        .then(function () {
+          console.log("I will run even after error");
+        })
+    }
+
+    // producer
+    function createOrder(cart) {
+      const pr = new Promise(function (resolve, reject) {
+        // createOrder
+        // validateCart
+        // get orderId
+
+        if (!validateCart(cart)) {
+          const err = new Error("Cart is not valid");
+          reject(err);
+        }
+
+        // logic for createOrder [simulate api call async operation]
+        const orderId = "12345";
+        if (orderId) {
+          setTimeout(function () {
+            resolve(orderId);
+          }, 3000);
+        }
+      });
+
+      return pr;
+    }
+
+    function proceedToPayment(orderId) {
+      return new Promise(function (resolve, reject) {
+        resolve("Payment is successful")
+      })
+    }
+
+    function validateCart(cart) {
+      if (successOrError == 'success') return true;
+      else return false;
+    }
+
+  </script>
+</body>
