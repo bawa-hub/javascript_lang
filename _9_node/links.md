@@ -26,6 +26,7 @@ https://javascript.plainenglish.io/73-awesome-npm-packages-for-productivity-c834
 
 https://github.com/sqreen/awesome-nodejs-projects
 https://itsourcecode.com/topics/nodejs-projects/page/2/
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp
 
 # npm --
 
