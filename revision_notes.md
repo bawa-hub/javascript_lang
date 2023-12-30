@@ -1,6 +1,6 @@
 # 1. Javascript Runtime []
 
-# 2. Fundamentals, Operators and Control flow statements
+# 2. Fundamentals, Operators, Control flow statements and Data Structures
 
 # 3. Functions
 
