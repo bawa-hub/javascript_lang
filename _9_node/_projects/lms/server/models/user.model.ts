@@ -1,7 +1,7 @@
 import mongoose, { Document, Model, Schema } from "mongoose";
 import bcrypt from 'bcryptjs'
 
-const emailRegexPattern: RegExp =   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const emailRegexPattern: RegExp = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
 export interface IUser extends Document {
     name: string;
@@ -13,13 +13,13 @@ export interface IUser extends Document {
     },
     role: string;
     isVerified: boolean;
-    courses: Array<(courseId: string)>;
-    comparePassword: (password: string) => Promise<boolean>;   
+    courses: Array<(courseId: string) => any>;
+    comparePassword: (password: string) => Promise<boolean>;
 }
 
 const userSchema: Schema<IUser> = new mongoose.Schema({
     name: {
-        type:String,
+        type: String,
         required: [true, 'Please enter your email'],
     },
     email: {
@@ -52,19 +52,20 @@ const userSchema: Schema<IUser> = new mongoose.Schema({
     courses: [{
         courseId: String,
     }],
-}, {timestamps: true});
+}, { timestamps: true });
 
 // Hash password before saving
- userSchema.pre<IUser>('save', async (next) => {
-    if(!this.isModified('password')) {
+userSchema.pre<IUser>('save', async function (next) {
+    if (!this.isModified('password')) {
         next();
     }
     this.password = await bcrypt.hash(this.password, 10);
     next();
- });
+});
 
- userSchema.methods.comparePassword = async (password: string): Promise<boolean> => {
+userSchema.methods.comparePassword = async function (password: string): Promise<boolean> {
     return await bcrypt.compare(password, this.password);
 }
 
 const userModel: Model<IUser> = mongoose.model("User", userSchema);
+export default userModel;

@@ -8,36 +8,36 @@
 
 /********************************* Array of products ************************************************/
 
-const products = [
-  {
-    id: 1,
-    name: "Polo Jeans",
-    price: 499,
-    color: "black",
-    category: "clothing",
-  },
-  {
-    id: 2,
-    name: "Kurta jeans",
-    price: 299,
-    color: "blue",
-    category: "clothing",
-  },
-  {
-    id: 3,
-    name: "Iphone",
-    price: 49999,
-    color: "black",
-    category: "electronics",
-  },
-  {
-    id: 4,
-    name: "TV",
-    price: 49999,
-    color: "black",
-    category: "electronics",
-  },
-];
+// const products = [
+//   {
+//     id: 1,
+//     name: "Polo Jeans",
+//     price: 499,
+//     color: "black",
+//     category: "clothing",
+//   },
+//   {
+//     id: 2,
+//     name: "Kurta jeans",
+//     price: 299,
+//     color: "blue",
+//     category: "clothing",
+//   },
+//   {
+//     id: 3,
+//     name: "Iphone",
+//     price: 49999,
+//     color: "black",
+//     category: "electronics",
+//   },
+//   {
+//     id: 4,
+//     name: "TV",
+//     price: 49999,
+//     color: "black",
+//     category: "electronics",
+//   },
+// ];
 
 /********************************* Add product ************************************************/
 

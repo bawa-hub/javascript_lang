@@ -1,12 +1,13 @@
-import express, {NextFunction, Request, Response} from 'express'
+import express, { NextFunction, Request, Response } from 'express'
 export const app = express()
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import { ErrorMiddleware } from './middleware/error'
+import userRouter from './routes/user.route'
 require('dotenv').config()
 
 // body parser
-app.use(express.json({limit: '50mb'}))
+app.use(express.json({ limit: '50mb' }))
 // cookie parser
 app.use(cookieParser())
 // cors
@@ -14,12 +15,15 @@ app.use(cors({
     origin: process.env.ORIGIN
 }))
 
+// routes
+app.use('/api/v1', userRouter)
+
 // testing api
-app.get('/test', (req: Request, res: Response, next:NextFunction) => {
-res.status(200).json({
-    success: true,
-    message: 'Api is running'
-})
+app.get('/test', (req: Request, res: Response, next: NextFunction) => {
+    res.status(200).json({
+        success: true,
+        message: 'Api is running'
+    })
 })
 
 // unknow route
