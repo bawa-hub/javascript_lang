@@ -16,6 +16,11 @@ console.log(counter);
 let counter = 1;
 // "ReferenceError: Cannot access 'counter' before initialization
 
+// The error message explains that the counter variable is already in the heap memory. 
+// However, it hasn’t been initialized.
+// Behind the scenes, the JavaScript engine hoists the variable declarations that use the let keyword. 
+// However, it doesn’t initialize the let variables.
+
 // Function Hoisting
 // Like variables, the JavaScript engine also hoists the function declarations.
 let x = 20,

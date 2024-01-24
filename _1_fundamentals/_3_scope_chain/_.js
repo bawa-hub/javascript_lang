@@ -12,6 +12,7 @@ function a() {
 }
 var d = 2;
 a();
+console.log(b) // referenceError: b is not defined
 
 // here first b inside c() searches for in local memory i.e. inside c()
 // then it searches in its parent i.e. inside a()
