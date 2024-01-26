@@ -36,6 +36,6 @@ connect()
     .catch(console.log)
     .finally(() => {
         if (globalConnection) {
-            globalConnection.`close()`;
+            globalConnection.close();
         }
     });
