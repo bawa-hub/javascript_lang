@@ -29,6 +29,8 @@
         .then(function (paymentInfo) {
           document.getElementById('payinfo').textContent = paymentInfo
         })
+        // this catch to used to handle error for all the then method above
+        
         .catch(function (err) {
           document.getElementById('msg').textContent = err.message
         })

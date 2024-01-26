@@ -1,0 +1,35 @@
+<body>
+    <script>
+    // Promise.allSettled api is same as Promise.all but it will wait for all promises to settled, either it will resolved or rejected
+
+
+const p1 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("P1 success"), 3000);
+})
+
+const p2 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("P1 success"), 1000);
+})
+
+const p3 = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("P1 success"), 2000);
+})
+
+const p4 = new Promise((resolve, reject) => {
+  setTimeout(() => reject("P4 fail"), 2000);
+})
+
+Promise.allSettled([p1, p2, p3, p4])
+.then(res => {
+  console.log(res)
+})
+.catch(err => {
+  console.error(err)
+})
+// Array(4) [ {…}, {…}, {…}, {…} ]
+// 0: Object { status: "fulfilled", value: "P1 success" }
+// 1: Object { status: "fulfilled", value: "P1 success" }
+// 2: Object { status: "fulfilled", value: "P1 success" }
+// 3: Object { status: "rejected", reason: "P4 fail" }
+    </script>
+</body>
